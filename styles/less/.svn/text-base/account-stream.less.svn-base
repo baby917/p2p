@@ -1,0 +1,155 @@
+/*--------开始编写----------*/
+@charset "utf-8";
+
+//公共样式选择背景蓝色
+.bg_blue{
+    background-color: #337AB7;
+    a{color: white;}
+}
+
+.font_B{
+    font-weight: bold;
+}
+.font_right{
+    text-align: right;
+}
+
+.account{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .account_left{
+        font-size: 16px;
+        .left_1,.left_3,.left_5,.left_7{
+            a{
+                display: block;
+                line-height: 40px;
+                background-color: #F5F5F5;
+                border: 1px solid #ccc;
+                border-bottom: 0px;
+                padding-left: 10px;
+            }
+            a:hover{
+              text-decoration: none;
+            }
+        }
+        .left_1{
+            a{
+                border-radius: 10px 10px 0px 0px;
+            }
+            a:nth-of-type(2){
+                border-radius: 0px;
+            }
+        }
+        .left_2,.left_4,.left_6{
+            ul{
+               border: 1px solid #ccc;
+               border-bottom: 0px;
+               margin-bottom: 0px;
+               padding-left: 0px;
+               font-size: 15px;
+               li{
+                   list-style: none;
+                   //padding-top: 10px;
+                   padding-left: 40px;
+                   line-height: 40px;
+               }
+               li:last-child{
+                   padding-bottom: 10px;
+               }
+            }
+        }
+        .left_7{
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    .account_right{
+        padding: 0px;
+        //账户流水里的样式
+        .title{
+//          border: 1px solid #ccc;
+//          border-bottom: 0px;
+            border-radius: 5px 5px 0px 0px;
+            background-color: #F5F5F5;
+            span{
+                display: block;
+                padding-left: 5px;
+                line-height: 30px;
+            }
+        }
+        .message_tb{
+            padding: 0px;
+            table{
+//              border: 1px solid #ccc;
+//              border-top: 0px;
+//              border-radius: 0px 0px 5px 5px;
+                tr:nth-of-type(2){
+                    background-color: #F5F5F5;
+                }
+            }
+        }
+        //个人资料里的样式
+        .div_top_text{
+            padding: 15px 0px;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            background-color: #F4F8FA;
+            p{
+                //line-height: 70px;
+                font-size: 24px;
+                color: #0099DD;
+                margin-bottom: 0px;
+                padding: 15px 0px;
+            }
+            span{
+                color: #31708F;
+                strong{
+                    color: #A94442;
+                }
+            }
+        }
+        .div_buttom_text{
+            .title{
+                margin-bottom: 20px;
+                border-bottom: 2px solid #ccc;
+                background-color: #fff;
+                padding: 7px 0px;
+                line-height: 40px;
+                p{
+                    //display: inline;
+                    padding-left: 15px;
+                    font-size: 24px;
+                    float: left;
+                    width: 130px;
+                    //height: 50px;
+                }
+                p:nth-of-type(2){
+                    //float: left;
+                    //display: block;
+                    padding: 0px;
+                    text-align: center;
+                    width: 70px;
+                    //height: 24px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #fff;
+                    background-color: #337AB7;
+                    position: relative;
+                    top: 10px;
+                    border-radius: 4px;
+                    line-height: 30px;
+                }
+            }
+            .div_form{
+                margin: 20px auto;
+                width: 300px;
+                text-align: center;
+                .form-group{
+                    margin: 0px auto;
+                    .input-group{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

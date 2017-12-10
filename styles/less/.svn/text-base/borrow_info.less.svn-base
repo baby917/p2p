@@ -1,0 +1,47 @@
+//借款详情
+.borrow_info_content{
+    .panel{
+        .panel-heading{
+            padding-top: 0;
+            span{
+               font-size: 22px;
+                color: @basiccolor; 
+            }
+            
+        }
+        
+        
+    }
+    .borrow_info_mid,.borrow_info_rht{
+            .panel-body{
+               p{
+                   font-size: 16px;
+                    color:@coloraaa; 
+                    span{
+                        color: @basiccolor;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }   
+}
+.borrow_people,.real_name,.material_info,.repayment,.tender{
+    .panel-heading{
+        font-size: 18px;
+    }
+    ul{
+        li{
+            line-height: 30px;
+            font-size: 16px;
+            color: #AAAAAA;
+            span{
+                padding-left: 10px;
+            }
+        }
+    }
+}
+.material_info,.repayment,.tender{
+    table{
+        font-size: 16px;
+    }
+}

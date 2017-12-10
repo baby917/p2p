@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator
+END
+greaterThan.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/greaterThan.js
+END
+creditCard.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/creditCard.js
+END
+ismn.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/ismn.js
+END
+ip.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/ip.js
+END
+stringLength.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/stringLength.js
+END
+iban.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/iban.js
+END
+phone.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/phone.js
+END
+issn.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/issn.js
+END
+date.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/date.js
+END
+color.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/color.js
+END
+meid.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/meid.js
+END
+lessThan.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/lessThan.js
+END
+imo.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/imo.js
+END
+between.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/between.js
+END
+vat.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/vat.js
+END
+isbn.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/isbn.js
+END
+id.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/id.js
+END
+callback.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/callback.js
+END
+emailAddress.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/emailAddress.js
+END
+zipCode.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/zipCode.js
+END
+uri.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/uri.js
+END
+isin.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/isin.js
+END
+ean.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/p2p/!svn/ver/229/Team5/trunk/Code/lib/bootstrapvalidator-master/test/spec/validator/ean.js
+END

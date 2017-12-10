@@ -1,0 +1,32 @@
+//我要投资
+.el_invest{
+    .panel{
+        div:nth-of-type(1){
+            padding: 10px 0;
+            span{
+                padding-top: 14px;
+                color: #666666;
+            }
+            .btn-group{
+                button{
+                    width: 100px;
+                }
+            }
+        }
+    }
+    table{
+        thead{
+            tr{
+                font-size: 16px;
+                color: #AAAAAA;
+            }
+        }
+        tr{
+           td{
+                line-height: 30px;
+                font-size: 16px;
+            }
+        }
+    }    
+}
+//我要投资结束

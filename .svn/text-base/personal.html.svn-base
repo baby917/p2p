@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>账户信息</title>
+	    <!-- Bootstrap -->
+	    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/javascript">
+	    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <!--fontawesome-->
+    	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+    	<!-- ECharts单文件引入 -->
+    	<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+		<!--自定义样式-->
+		<link rel="stylesheet" type="text/css" href="styles/css/core.css"/>
+	</head>
+	<body>
+	<!-- 头部导航栏 -->
+    <header class="el_navbar navbar navbar-inverse">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>			
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			      
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">首页</a></li>
+	        <li><a href="#"style="color: #0FA7FF;font-weight: bold;">花花</a></li>
+	        <li><a href="#">账户充值</a></li>
+	        <li><a href="#">注销</a></li>
+	        <li><a href="#">帮助</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+   </header>		
+	<!-- 内容导航栏部分 -->
+	<nav class="el_nav navbar-default">
+		  <div class="container">
+		    <div class="navbar-header">				    	
+			      <a class="navbar-brand nav_logo" href="#">
+			        <img alt="Brand" src="img/logo.png">
+			      </a>					   
+		    </div>		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		      <ul class="navbar-nav nav">
+		        <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">我要投资</a></li>
+		        <li><a href="#">我要借款</a></li>
+		        <li class="active"><a href="#">个人中心</a></li>
+		        <li><a href="#">新手指引</a></li>
+		        <li><a href="#">关于我们</a></li>
+		      </ul>
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!-- 个人中心 -->
+		<section class="container personal_content offcanvas offcanvas_left">
+			<!-- 左边层-->
+			<div class="col-sm-3 personal_ltnav offcanvas_asidebar">
+				<ul class="list-group">
+					<!--第一个-->
+				  <li class="list-group-item">
+				  	<a href="#">投资项目</a>
+				  </li>
+				  <!--第二个-->
+				  <li class="list-group-item">
+				  	<a href="#">借款项目</a>
+				  	<ul class="list-unstyled">
+				  		<li><a href="#">借款项目</a></li>
+				  		<li><a href="#">还款明细</a></li>
+				  	</ul>
+				  </li>
+				  <!--第三个-->
+				  <li class="list-group-item">
+				  	<a href="#">我的账户</a>
+				  	<ul class="list-unstyled">
+				  		<li><a href="#" class="active">账户信息</a></li>
+				  		<li><a href="#">实名认证</a></li>
+				  		<li><a href="#">银行卡管理</a></li>
+				  		<li><a href="#">登录记录</a></li>
+				  	</ul>
+				  </li>
+				  <!--第四个-->
+				  <li class="list-group-item">
+				  	<a href="#">资产详情</a>
+				  	<ul class="list-unstyled">
+				  		<li><a href="#">账户流水</a></li>
+				  		<li><a href="#">充值明细</a></li>
+				  		<li><a href="#">提现记录</a></li>
+				  		<li><a href="#">收款明细</a></li>
+				  	</ul>
+				  </li>
+				  <!--第五个-->
+				  <li class="list-group-item">
+				  	<a href="#">个人资料</a>
+				  </li>
+				</ul>
+			</div>
+			<!-- 右边层 -->
+			<div class="col-sm-9 account_right_personal">
+				<!--右侧图标-->
+				<button class="btn btn-primary visible-xs offcanvas_btn">
+					<i class="fa fa-angle-double-right" aria-hidden='true'></i>
+				</button>
+				  <!-- tab标题 -->
+				  <ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#basic_info" aria-controls="home" role="tab" data-toggle="tab">基本信息</a></li>
+				    <li role="presentation"><a href="#income_info" aria-controls="profile" role="tab" data-toggle="tab">收益详情</a></li>
+				  </ul>
+				  <!--tab内容-->
+				  <div class="tab-content">
+				  	<!--内容一-->
+				    <div role="tabpanel" class="tab-pane active" id="basic_info">
+				    	<div class="basic_info">
+					    	<!-- 标题 -->
+							<div class="title input-group">
+								<div class="div_img col-sm-1">
+									<img src="img/head_icon.jpg" />
+								</div>
+								<div class="col-sm-8">
+									<p>昵 称：huahua</p>
+									<p>用户名：花花</p>
+									<p>最后登录时间：2016-10-25 15:30:10</p>
+								</div>
+							</div>
+							<!-- 表格列表 -->
+							<div class="panel-body table-responsive message_tb">
+								<div class="div_top row">
+									<p class="col-lg-4">总金额：<span>10000元</span></p>
+									<p class="col-lg-4">可用金额：<span>8000元</span></p>
+									<p class="col-lg-4">冻结金额：<span>2000元</span></p>
+								</div>
+								<div class="div_center">
+									<a href="recharge.html" class="btn btn-primary btn-lg">账户充值</a>
+									<a href="account-withdraw.html" class="btn btn btn-danger btn-lg">账户提现</a>
+								</div>
+								<div class="div_bottom">
+									<div class="col-lg-4 col-sm-12 col-md-12">
+										<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+											<img src="img/shiming.png" />
+											<span class="font_b1">实名认证</span><br />
+											<span>未认证&nbsp;&nbsp;<a href="javascript:void(0)">马上认证</a></span>
+										</div>
+										<div>
+											<p>实名认证之后才能在平台投资</p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-sm-12 col-md-12">
+										<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+											<img src="img/shiming.png" />
+											<span class="font_b1">手机认证</span><br />
+											<span>已认证&nbsp;&nbsp;<a href="javascript:void(0)">查看</a></span>
+										</div>
+										<div>
+											<p>可以收到系统操作信息,并增加使用安全性</p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-sm-12 col-md-12">
+										<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+											<img src="img/shiming.png" />
+											<span class="font_b1">邮箱认证</span><br />
+											<span>已认证&nbsp;&nbsp;<a href="javascript:void(0)">查看</a></span>
+										</div>
+										<div>
+											<p>您可以设置邮箱来接收重要信息</p>
+										</div>
+									</div>
+									<div class="col-lg-5 col-sm-12 col-md-12">
+										<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+											<img src="img/shiming.png" />
+											<span class="font_b1">VIP会员</span><br />
+											<span>未认证&nbsp;&nbsp;<a href="javascript:void(0)">查看</a></span>
+										</div>
+										<div>
+											<p>VIP会员，让你更快捷的投资</p>
+										</div>
+									</div>
+								</div>
+			
+							</div>
+				    	</div>
+				    </div>
+				    <!--内容二-->
+				    <div role="tabpanel" class="tab-pane" id="income_info" style="height: 400px;">
+				    	
+				    </div>
+				  </div>
+			</div>
+		</section>		
+		<!-- 页脚部分 -->
+		<footer class="el_footer row">
+			<div class="container">
+				<div class="col-sm-8 footer_left">
+					<p>国内专业IT外包服务商</p>
+					<p>版权所有： 2006-2015成都昂格网络科技有限公司</p>
+					<p>地  址： 成都市高新区府城大道西段399号天府新谷6号楼620-625</p>
+					<p>电  话： 028-86868686 / 400-808-6840  邮箱： angge@163.cn</p>
+					<p><a href="#">蜀ICP备14030149号-1</a>  <a href="#">蜀公网安备510114990541</a></p>
+				</div>
+				<div class="col-sm-2 footer_mid">
+					<p>官方微博：</p>
+					<div class="row">
+						<a href="#">
+						<img src="img/tecent.png"/>
+						</a>
+						<a href="#">
+							<img src="img/sina.png"/>
+						</a>
+					</div>							
+				</div>
+				<div class="col-sm-2 footer_right">
+					<p>官方微信：</p>
+					<div class="row">
+						<a href="#">
+							<img src="img/concat.jpg"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>		
+		<script src="lib/jquery/dist/jquery.min.js"></script>
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!--小屏滑动脚本-->
+		<script type="text/javascript">
+			//设置初始值	
+			var flag=false;
+			$('.offcanvas_btn').on('click',function  () {
+				var btn=$(this);
+				var parent=btn.parent().parent();
+				if (!flag) {
+					parent.addClass('active');
+					btn.html('<i class="fa fa-angle-double-left"></i>');
+					flag=true;
+				} else{
+					parent.removeClass('active');
+					btn.html('<i class="fa fa-angle-double-right"></i>');
+					flag=false;
+				}
+			});
+			//移动端触摸屏自定义事件
+			(function  () {
+				//页面触屏事件
+				var $document=$(document);
+				//记录手指开始和结束
+				var startX,endX;
+				//设置最小值
+				var minMove=30;
+				//获取开始横坐标
+				$document.on('touchstart',function  (e) {
+					startX=e.originalEvent.changedTouches[0].pageX;
+				})
+				//获取结束时横坐标
+				$document.on('touchend',function  (e) {
+					endX=e.originalEvent.changedTouches[0].pageX;
+					//条件判断
+					if (endX - startX >= minMove) {
+						$document.trigger('touchLeftToRight');
+					} 
+				});
+			})()
+			//触发自定义事件
+			$(document).on('touchLeftToRight',function  () {
+				$('.offcanvas_btn').trigger('click');
+			})
+		</script>
+		<!--echarts报表-->
+		<script type="text/javascript">
+			//tab内容加载完毕后显示报表
+			$("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+		        var name = e.target.hash.substr(1);
+//		        console.log(name);
+		        //判断name
+		        if (name == "income_info") {
+		        	// 路径配置
+			        require.config({
+			            paths: {
+			                echarts: 'http://echarts.baidu.com/build/dist'
+			            }
+			        });
+			        
+			        // 使用
+			        require(
+			            [
+			                'echarts',
+			                'echarts/chart/pie' // 使用柱状图就加载bar模块，按需加载
+			            ],
+			            function (ec) {
+			                // 基于准备好的dom，初始化echarts图表
+			                var myChart = ec.init(document.getElementById('income_info')); 
+			                
+			                var option = {
+							    title : {
+							        text: '客户收益明细',
+							        subtext: '真实数据',
+							        x:'center'
+							    },
+							    tooltip : {
+							        trigger: 'item',
+							        formatter: "{a} <br/>{b} : {c} ({d}%)"
+							    },
+							    legend: {
+							        orient : 'vertical',
+							        x : 'left',
+							        data:['自主理财','委托理财','余额宝','签到奖励','其他奖励']
+							    },
+							    toolbox: {
+							        show : true,
+							        feature : {
+							            mark : {show: true},
+							            dataView : {show: true, readOnly: false},
+							            magicType : {
+							                show: true, 
+							                type: ['pie', 'funnel'],
+							                option: {
+							                    funnel: {
+							                        x: '25%',
+							                        width: '50%',
+							                        funnelAlign: 'left',
+							                        max: 1548
+							                    }
+							                }
+							            },
+							            restore : {show: true},
+							            saveAsImage : {show: true}
+							        }
+							    },
+							    calculable : true,
+							    series : [
+							        {
+							            name:'访问来源',
+							            type:'pie',
+							            radius : '55%',
+							            center: ['50%', '60%'],
+							            data:[
+							                {value:335, name:'自主理财'},
+							                {value:310, name:'委托理财'},
+							                {value:234, name:'余额宝'},
+							                {value:135, name:'签到奖励'},
+							                {value:1548, name:'其他奖励'}
+							            ]
+							        }
+							    ]
+							};    
+			                // 为echarts对象加载数据 
+			                myChart.setOption(option); 
+			            }
+			        );
+		        }
+			});
+    </script>
+	</body>
+</html>

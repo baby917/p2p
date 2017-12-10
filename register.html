@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>p2p借贷平台</title>
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrapvalidator-master/dist/css/bootstrapValidator.min.css"/>
+		<!--自定义样式-->
+		<link rel="stylesheet" type="text/css" href="styles/css/core.css"/>
+  </head>
+  <body>
+    <!--头部-->
+    <header class="el_navbar navbar navbar-inverse">
+			  <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+			      	<i>028-86755770</i>
+			      </a>
+			    </div>			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			      
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="index.html">首页</a></li>
+			        <li><a href="login.html">登录</a></li>
+			        <li><a href="register.html">快速注册</a></li>
+			        <li><a href="#">帮助</a></li>
+			        <!--<li>
+			        	<a  id='concat'  data-toggle="tooltip" data-placement="bottom" data-html='true' title="<img src='img/concat.jpg' height='110' width='110'/>" >
+			        	<i class="fa fa-qq" aria-hidden="true"></i>
+			        		联系客服
+			        </a>
+			        </li>-->
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			 </div><!-- /.container-fluid -->
+   </header>    
+    <!--导航-->
+		<nav class="el_nav">
+		  <div class="container">
+		    <div class="navbar-header">				    	
+				      <a class="navbar-brand nav_logo" href="#">
+				        <img alt="Brand" src="img/logo.png">
+				      </a>					   
+		    </div>		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		      <ul class="navbar-nav nav">
+		        <li class="active"><a href="#"style="color: #3498DB;font-size: 20px;font-weight: bold;">用户注册 <span class="sr-only">(current)</span></a></li>
+		        <!--<li><a href="#">我要投资</a></li>
+		        <li><a href="#">我要借款</a></li>
+		        <li><a href="#">个人中心</a></li>
+		        <li><a href="#">新手指引</a></li>
+		        <li><a href="#">关于我们</a></li>-->
+		      </ul>
+		  </div><!-- /.container-fluid -->
+		</nav>    
+    
+    <!--内容-->
+    <div class="register_content container">
+    	<div class="panel panel-default">
+		  <div class="panel-heading">用户注册</div>
+		  <div class="panel-body">
+		  	<h4 class="col-sm-offset-3">请填写注册信息，点击“提交注册”即可完成注册!</h4>
+		    <form id="register_form" class="form-horizontal col-sm-offset-2">
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+				    <div class="col-sm-6 form_box">
+				      <input type="text" class="form-control" id="inputEmail3" name="username" >
+				      	<p>用户名为2~16位字母，数字，符号或中文</p>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-sm-2 control-label">密&emsp;码</label>
+				    <div class="col-sm-6 form_box">
+				      <input type="password" class="form-control" id="inputPassword3" name="password">
+				      	<p>密码为6~16位字符组成,采用数字、字母、符号安全性更高</p>			      	
+				    </div>
+				  </div>
+				  <div class="form-group form_box">
+				    <label for="inputPassword3" class="col-sm-2 control-label">确认密码</label>
+				    <div class="col-sm-6">
+				      <input type="password" class="form-control" id="inputPassword3" name="confirmPassword">
+				      	<p>请再次填写密码</p>
+				    </div>
+				  </div>			  
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="" class="btn btn-success">同意协议并注册</button>&emsp;&emsp;<a href="login.html">已有账号，马上登录</a>
+				      <p class="col-sm-offset-1" style="margin-top: 12px;"><a href="#">《使用协议说明书》</a></p>
+				    </div>
+				  </div>
+				</form>
+		  </div>
+		</div>
+    </div>
+    
+ 
+		<!--页脚-->
+		<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrapvalidator-master/dist/js/bootstrapValidator.min.js" type="text/javascript" charset="utf-8"></script>
+  	<!--表单验证-->
+  	<script type="text/javascript">
+  		 	$(function () {
+        $('#register_form').bootstrapValidator({
+            message: 'This value is not valid',
+//          feedbackIcons: {
+//              valid: 'glyphicon glyphicon-ok',
+//              invalid: 'glyphicon glyphicon-remove',
+//              validating: 'glyphicon glyphicon-refresh'
+//          },
+            fields: {
+                username: {
+                    message: '用户名验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '用户名不能为空'
+                        },
+                        stringLength: {
+                            min: 2,
+                            max: 16,
+                            message: '用户名长度必须在6到18位之间'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_]+$/,
+                            message: '用户名只能包含大写、小写、数字和下划线'
+                        }
+                    }
+                },
+                password: {
+                validators: {
+                    notEmpty: {
+                            message: '密码不能为空'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 16,
+                        message: '密码长度必须在6到18位之间'
+                    },
+                    identical: {
+                        field: 'confirmPassword',
+                        message: '两次密码不一致！'
+                    },
+                    different: {
+                        field: 'username',
+                        message: '密码不能与用户名相同'
+                    }
+                }
+            },
+            confirmPassword: {
+                validators: {
+                    notEmpty: {
+                    	message: '密码不能为空'
+                    },
+                    identical: {
+                        field: 'password',
+                      	message: '两次密码不一致！'
+                    },
+                    different: {
+                        field: 'username',
+                        message: '密码不能与用户名相同'
+                    }
+                }
+            },
+//          submitHandler: function (validator, register_form, submitButton) {
+//              alert("submit");
+//          }
+        }
+    })
+         .on('success.form.bv', function(e) {
+	           $.get("server/server.json", $('#login_form').serialize(), function(result) {
+	          	if (result.success) {
+	          		alert('恭喜，注册成功！');
+	//				              		$.message.popup(result.message);
+	          		setTimeout(function  () {
+	          			location.href='index.html';
+	          		},1000);
+	          	}else{
+	          		$.message.popup(result.message);
+	          	}
+	            });
+		      });	
+  }); 
+  	</script>
+
+  </body>
+</html>

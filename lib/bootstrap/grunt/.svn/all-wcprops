@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt
+END
+.jshintrc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/.jshintrc
+END
+bs-lessdoc-parser.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/bs-lessdoc-parser.js
+END
+change-version.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/change-version.js
+END
+bs-commonjs-generator.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/bs-commonjs-generator.js
+END
+sauce_browsers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/sauce_browsers.yml
+END
+bs-glyphicons-data-generator.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/bs-glyphicons-data-generator.js
+END
+npm-shrinkwrap.json
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/npm-shrinkwrap.json
+END
+bs-raw-files-generator.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/bs-raw-files-generator.js
+END
+configBridge.json
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/bootstrap/grunt/configBridge.json
+END

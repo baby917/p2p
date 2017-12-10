@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>p2p借贷平台</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--引入bootstrapvalidator样式-->
+		<link rel="stylesheet" type="text/css" href="lib/bootstrapvalidator-master/dist/css/bootstrapValidator.min.css"/>
+    <!--fontawesome-->
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+		<!--自定义样式-->
+		<link rel="stylesheet" type="text/css" href="styles/css/core.css"/>
+  </head>
+  <body>
+    <!--头部-->
+    <header class="el_navbar navbar navbar-inverse">
+			  <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+			      	<i>028-86755770</i>
+			      </a>
+			    </div>			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			      
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="index.html">首页</a></li>
+			        <li><a href="login.html">登录</a></li>
+			        <li><a href="register.html">快速注册</a></li>
+			        <li><a href="#">帮助</a></li>
+			        <!--<li>
+			        	<a  id='concat'  data-toggle="tooltip" data-placement="bottom" data-html='true' title="<img src='img/concat.jpg' height='110' width='110'/>" >
+			        	<i class="fa fa-qq" aria-hidden="true"></i>
+			        		联系客服
+			        </a>
+			        </li>-->
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			 </div><!-- /.container-fluid -->
+   </header>    
+    <!--导航-->
+		<nav class="el_nav">
+		  <div class="container">
+		    <div class="navbar-header">				    	
+				      <a class="navbar-brand nav_logo" href="#">
+				        <img alt="Brand" src="img/logo.png">
+				      </a>					   
+		    </div>		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		      <ul class="navbar-nav nav">
+		        <li class="active"><a href="#"style="color: #3498DB;font-size: 20px;font-weight: bold;">用户登录 <span class="sr-only">(current)</span></a></li>
+		        <!--<li><a href="#">我要投资</a></li>
+		        <li><a href="#">我要借款</a></li>
+		        <li><a href="#">个人中心</a></li>
+		        <li><a href="#">新手指引</a></li>
+		        <li><a href="#">关于我们</a></li>-->
+		      </ul>
+		  </div><!-- /.container-fluid -->
+		</nav> 
+    <!--内容-->
+    <div class="login_content container">
+    	<div class="panel panel-default">
+		  <div class="panel-heading">用户登录</div>
+		  <div class="panel-body">
+		  	<!--form表单-->
+		   <form id="login_form" class="form-horizontal col-sm-offset-2" action="" method="get" role="form">
+		    	<h4 class="col-sm-offset-2">请输入用户名和密码</h4>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+				    <div class="col-sm-4">
+				      <input name="username" type="text" class="form-control" id="inputEmail3" placeholder="用户名">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-sm-2 control-label">密&emsp;码</label>
+				    <div class="col-sm-4">
+				      <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="密码">
+				    </div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 login_btn">
+				      <button class="btn btn-success" href=''>登录</button>&emsp;&emsp;<a href="register.html">新用户，马上注册</a>
+				    </div>
+				  </div>
+				</form>
+
+		  </div>
+		</div>
+    </div>
+		<!--页脚-->
+		<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--bootstrapvalidator js-->
+    <script src="lib/bootstrapvalidator-master/dist/js/bootstrapValidator.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--表单验证-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+		    $('#login_form').bootstrapValidator({
+		            message: 'This value is not valid',
+		            feedbackIcons: {
+		                valid: 'glyphicon glyphicon-ok',
+		                invalid: 'glyphicon glyphicon-remove',
+		                validating: 'glyphicon glyphicon-refresh'
+		            },
+		            fields: {
+		                username: {
+		                    validators: {
+		                        notEmpty: {
+		                            message: '用户名不能为空'
+		                        },
+		                        stringLength: {
+		                            min: 6,
+		                            max: 18,
+		                            message: '用户名长度必须在6到18位之间'
+		                        },
+		                        /*remote: {
+		                            url: 'remote.php',
+		                            message: 'The username is not available'
+		                        },*/
+		                        regexp: {
+		                            regexp: /^[a-zA-Z0-9_\.]+$/,
+		                            message: '用户名只能包含大写、小写、数字和下划线'
+		                        }
+		                    }
+		                },
+											password: {
+					                validators: {
+					                    notEmpty: {
+					                    	message: '密码不可为空'
+					                    }
+					                }
+					         },
+//					         submitHandler: function (validator, form, submitButton) {
+////			                alert("submit");
+//												console.log('111111111111');
+			            }
+		            })
+						    .on('success.form.bv', function(e) {
+				               $.get("server/server.json", $('#login_form').serialize(), function(result) {
+				              	if (result.success) {
+				              		alert('登录成功');
+//				              		$.message.popup(result.message);
+				              		setTimeout(function  () {
+				              			location.href='index.html';
+				              		},1000);
+				              	}else{
+				              		$.message.popup(result.message);
+				              	}
+					            });
+						      });	
+		        })
+    </script>
+  </body>
+</html>

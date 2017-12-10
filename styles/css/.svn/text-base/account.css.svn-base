@@ -1,0 +1,141 @@
+/*--------开始编写----------*/
+@charset "utf-8";
+.bg_blue {
+  background-color: #337AB7;
+}
+.bg_blue a {
+  color: white;
+}
+.font_B {
+  font-weight: bold;
+}
+.font_right {
+  text-align: right;
+}
+.account {
+  /*margin-top: 30px;*/
+  margin-bottom: 30px;
+}
+.account .account_left {
+  font-size: 16px;
+}
+.account .account_left .left_1 a,
+.account .account_left .left_3 a,
+.account .account_left .left_5 a,
+.left_7 a {
+  display: block;
+  line-height: 40px;
+  background-color: #F5F5F5;
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  padding-left: 10px;
+}
+.account .account_left .left_1 a:hover,
+.account .account_left .left_3 a:hover,
+.account .account_left .left_5 a:hover,
+.account .account_left .left_7 a:hover {
+  text-decoration: none;
+}
+.account .account_left .left_1 a {
+  border-radius: 10px 10px 0px 0px;
+}
+.account .account_left .left_1 a:nth-of-type(2) {
+  border-radius: 0px;
+}
+.account .account_left .left_2 ul,
+.account .account_left .left_4 ul,
+.account .account_left .left_6 ul {
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  font-size: 15px;
+}
+.account .account_left .left_2 ul li,
+.account .account_left .left_4 ul li,
+.account .account_left .left_6 ul li {
+  list-style: none;
+  padding-left: 40px;
+  line-height: 40px;
+}
+.account .account_left .left_2 ul li:last-child,
+.account .account_left .left_4 ul li:last-child,
+.account .account_left .left_6 ul li:last-child {
+  padding-bottom: 10px;
+}
+.account .account_left .left_7 {
+  border-bottom: 1px solid #ccc;
+}
+.account .account_right {
+  padding: 0px;
+}
+.account .account_right .title {
+  border-radius: 5px 5px 0px 0px;
+  background-color: #F5F5F5;
+}
+.account .account_right .title span {
+  display: block;
+  padding-left: 5px;
+  line-height: 30px;
+}
+.account .account_right .message_tb {
+  padding: 0px;
+}
+.account .account_right .message_tb table tr:nth-of-type(2) {
+  background-color: #F5F5F5;
+}
+.account .account_right .div_top_text {
+  padding: 15px 0px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  background-color: #F4F8FA;
+}
+.account .account_right .div_top_text p {
+  font-size: 24px;
+  color: #0099DD;
+  margin-bottom: 0px;
+  padding: 15px 0px;
+}
+.account .account_right .div_top_text span {
+  color: #31708F;
+}
+.account .account_right .div_top_text span strong {
+  color: #A94442;
+}
+.account .account_right .div_buttom_text .title {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  background-color: #fff;
+  padding: 7px 0px;
+  line-height: 40px;
+}
+.account .account_right .div_buttom_text .title p {
+  padding-left: 15px;
+  font-size: 24px;
+  float: left;
+  width: 130px;
+}
+.account .account_right .div_buttom_text .title p:nth-of-type(2) {
+  padding: 0px;
+  text-align: center;
+  width: 70px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #337AB7;
+  position: relative;
+  top: 10px;
+  border-radius: 4px;
+  line-height: 30px;
+}
+.account .account_right .div_buttom_text .div_form {
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+}
+.account .account_right .div_buttom_text .div_form .form-group {
+  margin: 0px auto;
+}
+.account .account_right .div_buttom_text .div_form .form-group .input-group {
+  margin-bottom: 20px;
+}

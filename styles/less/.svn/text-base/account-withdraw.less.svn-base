@@ -1,0 +1,12 @@
+//账户提现
+.account_widthdraw_content{
+    div.account-money{
+        p{
+            font-size: 18px;
+            padding: 15px 0;
+            span{
+                color: @basiccolor;
+            }
+        }
+    }
+}

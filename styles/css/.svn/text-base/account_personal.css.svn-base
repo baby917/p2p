@@ -1,0 +1,79 @@
+/*--------个人账户账户信息右侧----------*/
+@charset "utf-8";
+.font_b1 {
+  font-weight: bold;
+}
+.account_right_personal .basic_info {
+  border: solid 1px #ccc;
+  border-top: 0;
+  padding: 20px;
+}
+.account_right_personal .title {
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.account_right_personal .title .div_img {
+  border: 1px solid #aaa;
+  padding: 5px;
+  width: 110px;
+}
+.account_right_personal .title .div_img img {
+  width: 100px;
+}
+.account_right_personal .title div:nth-of-type(2) p:nth-of-type(1) {
+  padding-top: 10px;
+}
+.account_right_personal .message_tb .div_top p {
+  font-size: 16px;
+}
+.account_right_personal .message_tb .div_top p span {
+  color: #337AB7;
+  font-weight: bold;
+}
+.account_right_personal .message_tb .div_center {
+  padding-top: 20px;
+  text-align: center;
+}
+.account_right_personal .message_tb .div_bottom {
+  padding-top: 30px;
+}
+.account_right_personal .message_tb .div_bottom img {
+  float: left;
+}
+.account_right_personal .message_tb .div_bottom div {
+  padding: 10px,10px,0px,10px;
+  float: left;
+}
+.account_right_personal .message_tb .div_bottom div p {
+  margin: 15px 0px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+.account_right_personal .message_tb .div_bottom div:nth-of-type(2) {
+  margin: 0px;
+}
+@media screen and (max-width: 768px) {
+  .offcanvas {
+    position: relative;
+    transition: left 2s;
+  }
+  .offcanvas_left {
+    left: 0;
+  }
+  .offcanvas_asidebar {
+    position: absolute;
+    width: 50%;
+    left: -50%;
+  }
+  .offcanvas_btn {
+    position: absolute;
+    padding: 30px 8px;
+    top: 30%;
+    left: 0px;
+    z-index: 2;
+  }
+  .offcanvas.active {
+    left: 50%;
+  }
+}

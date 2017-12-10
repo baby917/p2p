@@ -1,0 +1,98 @@
+/*--------个人账户账户信息右侧----------*/
+@charset "utf-8";
+.font_b1{
+    font-weight: bold;
+}
+
+.account_right_personal{
+    .basic_info{
+        border: solid 1px #ccc;
+        border-top: 0;
+        padding: 20px;
+    }
+    .title{
+        width: 100%;
+        padding: 20px 0px;
+        .div_img{
+            border: 1px solid #aaa;
+            padding: 5px;
+            width: 110px;
+            img{
+                width: 100px;
+            }
+        }
+        div:nth-of-type(2){
+            p:nth-of-type(1){
+                padding-top: 10px;
+            }
+        }
+        border-bottom: 1px solid #ccc;
+    }
+    .message_tb{
+        .div_top{
+            p{
+                font-size: 16px;
+                span{
+                    color: #337AB7;
+                    font-weight: bold;
+                }
+            }
+        }
+        .div_center{
+            padding-top: 20px;
+            text-align: center;
+        }
+        .div_bottom{
+            padding-top: 30px;
+            img{
+                float: left;
+            };
+            div{
+                padding: 10px,10px,0px,10px;
+                float: left;
+                p{
+                    margin: 15px 0px;
+                    //padding: 0px;
+                    line-height: 20px;
+                    padding-left: 20px;
+                };
+            }
+            div:nth-of-type(2){
+                margin: 0px;
+                p{
+                    
+                }
+            }
+        }
+    }
+}
+//小屏滑动效果
+@media screen and (max-width:768px){
+    //父元素相对定位
+    .offcanvas{
+        position: relative;
+        transition: left 2s;
+        
+    }
+    //父容器左边对齐
+    .offcanvas_left{
+        left: 0;
+    }
+    //左侧内容上浮
+    .offcanvas_asidebar{
+        position: absolute;
+         width: 50%;
+        left: -50%;
+    }
+    //蓝色图标
+    .offcanvas_btn{
+        position: absolute;
+        padding: 30px 8px;
+        top: 50%-20px;
+        left: 0px;
+        z-index: 2;
+    }
+    .offcanvas.active{
+        left: 50%;
+    }
+}

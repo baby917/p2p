@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我要投资</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--fontawesome-->
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+		<!--自定义样式-->
+		<link rel="stylesheet" type="text/css" href="styles/css/core.css"/>
+  </head>
+  <body>
+    <!--头部-->
+    <header class="el_navbar navbar navbar-inverse">
+			  <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <!--<a class="navbar-brand" href="#">
+			      	<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+			      	<i>028-86755770</i>
+			      </a>-->
+			    </div>			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			      
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#">首页</a></li>
+			        <li><a href="#"style="color: #0FA7FF;font-weight: bold;">花花</a></li>
+			        <li><a href="#">账户充值</a></li>
+			        <li><a href="#">注销</a></li>
+			        <li><a href="#">帮助</a></li>
+			        <!--<li>
+			        	<a  id='concat'  data-toggle="tooltip" data-placement="bottom" data-html='true' title="<img src='img/concat.jpg' height='110' width='110'/>" >
+			        	<i class="fa fa-qq" aria-hidden="true"></i>
+			        		联系客服
+			        </a>
+			        </li>-->
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			 </div><!-- /.container-fluid -->
+   </header>    
+    <!--导航-->
+		<nav class="el_nav navbar-default">
+		  <div class="container">
+		    <div class="navbar-header">				    	
+				      <a class="navbar-brand nav_logo" href="#">
+				        <img alt="Brand" src="img/logo.png">
+				      </a>					   
+		    </div>		
+		      <ul class="navbar-nav nav">
+		        <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+		        <li class="active"><a href="#">我要投资</a></li>
+		        <li><a href="#">我要借款</a></li>
+		        <li><a href="#">个人中心</a></li>
+		        <li><a href="#">新手指引</a></li>
+		        <li><a href="#">关于我们</a></li>
+		      </ul>
+		  </div><!-- /.container-fluid -->
+		</nav> 
+    	<!--内容-->
+    	<div class="el_invest container">
+    		<div class="panel">
+			  <p class="panel-heading" style="font-size: 18px;margin-bottom: 0;padding: 0;">投资列表</p>
+			  <div class="row">
+		  		<span class="col-sm-1">标的状态</span>
+				<div class="btn-group" role="group">
+				  <button type="button" class="btn btn-default active">全部</button>
+				  <button type="button" class="btn btn-default">招标中</button>
+				  <button type="button" class="btn btn-default">还款中</button>
+				</div>
+			</div>			  	
+			  <!--表格-->
+			  <div class="table-responsive">
+			  	<table class="table table-hover">
+			    	<thead>
+			    		<tr>
+				    		<th>借款人</th>
+				    		<th>借款标题</th>
+				    		<th>年利率</th>
+				    		<th>金额</th>
+				    		<th>还款方式	</th>
+				    		<th>进度</th>
+				    		<th>操作</th>
+			    		</tr>
+			    	</thead>
+			    	<tr>
+			    		<td>zs</td>
+			    		<td>给我2000度过难关</td>
+			    		<td>10.00%</td>
+			    		<td>2,000.00</td>
+			    		<td>按月分期还款</td>
+			    		<td>100.00%</td>
+			    		<td><a class="btn btn-danger btn-sm" href="#" role="button">查看</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>xx</td>
+			    		<td>给我2000度过难关</td>
+			    		<td>10.00%</td>
+			    		<td>2,000.00</td>
+			    		<td>按月分期还款</td>
+			    		<td>100.00%</td>
+			    		<td><a class="btn btn-danger btn-sm" href="#" role="button">查看</a></td>
+			    	</tr>
+				  </table>
+			  </div>
+			</div>	
+    	</div>
+    	
+		<!--页脚-->
+			<footer class="el_footer row">
+				<div class="container">
+						<div class="col-sm-8 footer_left">
+							<p>国内专业IT外包服务商</p>
+							<p>版权所有： 2006-2015成都昂格网络科技有限公司</p>
+							<p>地  址： 成都市高新区府城大道西段399号天府新谷6号楼620-625</p>
+							<p>电  话： 028-86868686 / 400-808-6840  邮箱： angge@163.cn</p>
+							<p><a href="#">蜀ICP备14030149号-1</a>  <a href="#">蜀公网安备510114990541</a></p>
+						</div>
+						<div class="col-sm-2 footer_mid">
+							<p>官方微博：</p>
+							<div class="row">
+								<a href="#">
+								<img src="img/tecent.png"/>
+								</a>
+								<a href="#">
+									<img src="img/sina.png"/>
+								</a>
+							</div>							
+						</div>
+						<div class="col-sm-2 footer_right">
+									<p>官方微信：</p>
+									<div class="row">
+										<a href="#">
+											<img src="img/concat.jpg"/>
+										</a>
+									</div>
+									
+						</div>
+				</div>
+			</footer>		
+		
+		
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

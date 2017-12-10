@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>我要借款</title>
+	    <!-- Bootstrap -->
+	    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/javascript">
+	    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <!--fontawesome-->
+    	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+		<!--自定义样式-->
+		<link rel="stylesheet" type="text/css" href="styles/css/core.css"/>
+	</head>
+	<body>
+	<!-- 头部导航栏 -->
+    <header class="el_navbar navbar navbar-inverse">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>			
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			      
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">首页</a></li>
+	        <li><a href="#"style="color: #0FA7FF;font-weight: bold;">花花</a></li>
+	        <li><a href="#">账户充值</a></li>
+	        <li><a href="#">注销</a></li>
+	        <li><a href="#">帮助</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+   </header>		
+	<!-- 内容导航栏部分 -->
+	<nav class="el_nav navbar-default">
+		  <div class="container">
+		    <div class="navbar-header">				    	
+			      <a class="navbar-brand nav_logo" href="#">
+			        <img alt="Brand" src="img/logo.png">
+			      </a>					   
+		    </div>		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		      <ul class="navbar-nav nav">
+		        <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">我要投资</a></li>
+		        <li><a href="#">我要借款</a></li>
+		        <li class="active"><a href="#">个人中心</a></li>
+		        <li><a href="#">新手指引</a></li>
+		        <li><a href="#">关于我们</a></li>
+		      </ul>
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!-- 借款 -->
+		<section class="container borrow_message">
+			<div class="row">
+				<!-- 左 -->
+				<div class="col-sm-4 col-xs-12 div_left">
+					<h3>信用贷</h3>
+					<div class="div_left_content">
+						<p class="font16">可借金额<em> ¥ 2,000.00</em></p>
+						<p>
+							<a href="#">申请条件</a>
+						</p>
+						<p>仅限成都地区</p>
+						<div>
+							<ul>
+								<li>填写基本资料</li>
+								<li>身份认证</li>
+								<li>视频认证</li>
+							</ul>
+						</div>
+						<div class="div_a">
+							<a href="#">立刻申请</a>
+						</div>
+					</div>
+				</div>
+				<!-- 中 -->
+				<div class="col-sm-4 col-xs-12 div_center">
+					<h3>信用贷</h3>
+					<div class="div_center_content">
+						<p class="font16">可借金额<em> ¥ 2,000.00</em></p>
+						<p>
+							<a href="#">申请条件</a>
+						</p>
+						<p>仅限成都地区</p>
+						<div>
+							<ul>
+								<li>填写基本资料</li>
+								<li>身份认证</li>
+								<li>视频认证</li>
+							</ul>
+						</div>
+						<div class="div_a">
+							<a href="#">立刻申请</a>
+						</div>
+					</div>					
+				</div>
+				<!-- 右 -->
+				<div class="col-sm-4 col-xs-12 div_right">
+				<h3>信用贷</h3>
+				<div class="div_right_content">
+					<p class="font16">可借金额<em> ¥ 2,000.00</em></p>
+					<p>
+						<a href="#">申请条件</a>
+					</p>
+					<p>仅限成都地区</p>
+					<div>
+						<ul>
+							<li>填写基本资料</li>
+							<li>身份认证</li>
+							<li>视频认证</li>
+						</ul>
+					</div>
+					<div class="div_a">
+						<a href="#">立刻申请</a>
+					</div>
+				</div>				
+			</div>
+			</div>
+		</section>
+		
+		<!-- 页脚部分 -->
+		<footer class="el_footer row">
+			<div class="container">
+				<div class="col-sm-8 footer_left">
+					<p>国内专业IT外包服务商</p>
+					<p>版权所有： 2006-2015成都昂格网络科技有限公司</p>
+					<p>地  址： 成都市高新区府城大道西段399号天府新谷6号楼620-625</p>
+					<p>电  话： 028-86868686 / 400-808-6840  邮箱： angge@163.cn</p>
+					<p><a href="#">蜀ICP备14030149号-1</a>  <a href="#">蜀公网安备510114990541</a></p>
+				</div>
+				<div class="col-sm-2 footer_mid">
+					<p>官方微博：</p>
+					<div class="row">
+						<a href="#">
+						<img src="img/tecent.png"/>
+						</a>
+						<a href="#">
+							<img src="img/sina.png"/>
+						</a>
+					</div>							
+				</div>
+				<div class="col-sm-2 footer_right">
+					<p>官方微信：</p>
+					<div class="row">
+						<a href="#">
+							<img src="img/concat.jpg"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>	
+		<script src="lib/jquery/dist/jquery.min.js"></script>
+    	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

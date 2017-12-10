@@ -1,0 +1,171 @@
+@charset:'utf-8';
+@import 'login';
+@import 'register';
+@import 'invest';
+@import 'account-withdraw';
+@import 'recharge';
+@import 'borrow_info';
+@import 'borrowMessage';
+@import 'header';
+@import 'footer';
+@import 'nav';
+@import 'account_lit';
+@import 'left-nav';
+@import ' account_personal';
+@import 'account-stream';
+@import 'borrow_apply';
+@import 'real_identity';
+@basiccolor:#3498DB;
+@color666:#666;
+@coloraaa:#aaa;
+
+//头部
+.el_navbar{
+//去除圆角边框
+    border-radius: 0;
+    margin-bottom: 0;    
+    .navbar-header{
+        a{
+            color: white;
+            i{
+                font-size: 24px;
+            }
+        }
+    }
+    .navbar-right{
+        li{
+            position: relative;
+            a{
+               color: white;
+               &:hover{
+                   color: @basiccolor;
+                   text-decoration: underline;
+               } 
+            }
+            figure{
+                position: absolute; 
+                display: none;               
+                top: 60px;
+                right: 0px;
+                border: 2px solid rgba(0,0,0,.5);
+                z-index: 2;
+                img{
+                    width: 100px;
+                    height: 100px; 
+                } 
+            }
+        }
+    }
+    
+}
+
+//导航
+.el_nav{
+    background-color: #F8F8F8;
+    margin-bottom: 10px;
+    .navbar-header {
+        .nav_logo{
+            img{
+                width: 109px;
+            }
+        }
+    }     
+    .navbar-nav{
+        li{
+            min-width: 90px;
+            text-align: center;
+            a{
+                color: #666;
+                font-size: 16px;
+                line-height: 40px;               
+            }
+            &:hover{
+                background: #f0f0f0;
+                a{
+                    color: @basiccolor;
+                }   
+            }
+        }         
+    } 
+}
+
+//内容
+.el_main{
+    //三大特色
+    .el_feature{
+        .feature_con{            
+            padding-left: 72px;
+            height: 80px;
+            margin-top: 20px;            
+            dt{
+                font-size: 18px;
+            }
+        }
+        .feature_ico1{background: url(../../img/feature01.png) no-repeat;}
+        .feature_ico2{background: url(../../img/feature02.png) no-repeat;}
+        .feature_ico3{background: url(../../img/feature03.png) no-repeat;}
+    }
+    //进行中借款
+    .el_borrow,.el_news{
+       .panel-heading{
+             border-bottom: 1px solid #ccc;   
+             padding-bottom: 0;  
+             padding-left: 0;      
+            .pull-left{              
+              border-bottom: 4px solid @basiccolor;
+                padding-bottom: 5px;
+                font-size: 24px;
+                color: @basiccolor;
+            }
+            .pull-right{
+                padding-top: 14px;
+            }
+        } 
+         .panel-body{
+            table{
+                tr{
+                    th{
+                        border-top:0px!important ;
+                    }
+                }
+            }
+        }
+    }
+    //新闻
+    .el_news{
+        .panel-body{
+            ul{
+                list-style: none;
+                padding-left: 0;
+                li{
+                    line-height: 30px;
+                    a{
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }    
+}
+//页脚
+.el_footer{
+    background: #F0F0F0;
+    padding: 30px 0;
+    margin: 0px;
+    .footer_left{        
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .footer_mid,.footer_right{
+        p{
+            text-align: center;
+        }
+    }      
+    .row{
+        text-align: center;
+        img{
+            width: 70%; 
+        }            
+    }
+
+}

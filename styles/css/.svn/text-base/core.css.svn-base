@@ -1,0 +1,802 @@
+.login_content .panel-body form h4 {
+  color: #aaaaaa;
+  padding: 12px;
+}
+.login_content .panel-body form .form-group .login_btn {
+  padding-left: 40px;
+}
+.login_content .panel-body form .form-group .login_btn button {
+  width: 80px;
+}
+.register_content .panel-body {
+  padding: 0 15px;
+}
+.register_content .panel-body h4 {
+  padding: 20px 0;
+  color: #aaaaaa;
+}
+.register_content .panel-body form .form-group .form_box input {
+  width: 50%;
+}
+.register_content .panel-body form .form-group .form_box p {
+  color: #666666;
+  padding-top: 6px;
+}
+.el_invest .panel div:nth-of-type(1) {
+  padding: 10px 0;
+}
+.el_invest .panel div:nth-of-type(1) span {
+  padding-top: 14px;
+  color: #666666;
+}
+.el_invest .panel div:nth-of-type(1) .btn-group button {
+  width: 100px;
+}
+.el_invest table thead tr {
+  font-size: 16px;
+  color: #AAAAAA;
+}
+.el_invest table tr td {
+  line-height: 30px;
+  font-size: 16px;
+}
+.account_widthdraw_content div.account-money p {
+  font-size: 18px;
+  padding: 15px 0;
+}
+.account_widthdraw_content div.account-money p span {
+  color: #3498db;
+}
+.recharge_content .recharge_content_top {
+  background-color: #F4F8FA;
+  border-left: 2px solid darkblue;
+  padding: 30px 20px;
+}
+.recharge_content .recharge_content_top h3 {
+  color: #3498DB;
+}
+.recharge_content .recharge_content_main {
+  margin: 20px 0;
+}
+.recharge_content .recharge_content_main .tab-content {
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding: 10px 20px;
+}
+.recharge_content .recharge_content_main .tab-content table .el_bank {
+  display: block;
+  width: 118px;
+  height: 28px;
+  background: url(../../img/bank_list.png) no-repeat;
+}
+.recharge_content .recharge_content_main .tab-content table .el_bank2 {
+  background-position: 0px -35px;
+}
+.recharge_content .recharge_content_main .tab-content table .el_bank3 {
+  background-position: 0px -108px;
+}
+.recharge_content .recharge_content_main .tab-content table tr td {
+  vertical-align: middle;
+}
+.recharge_content .recharge_content_main .tab-content p {
+  color: #337AB7;
+}
+.recharge_content .recharge_content_main .tab-content p span {
+  font-size: 20px;
+}
+.borrow_info_content .panel .panel-heading {
+  padding-top: 0;
+}
+.borrow_info_content .panel .panel-heading span {
+  font-size: 22px;
+  color: #3498db;
+}
+.borrow_info_content .borrow_info_mid .panel-body p,
+.borrow_info_content .borrow_info_rht .panel-body p {
+  font-size: 16px;
+  color: #aaaaaa;
+}
+.borrow_info_content .borrow_info_mid .panel-body p span,
+.borrow_info_content .borrow_info_rht .panel-body p span {
+  color: #3498db;
+  padding-left: 20px;
+}
+.borrow_people .panel-heading,
+.real_name .panel-heading,
+.material_info .panel-heading,
+.repayment .panel-heading,
+.tender .panel-heading {
+  font-size: 18px;
+}
+.borrow_people ul li,
+.real_name ul li,
+.material_info ul li,
+.repayment ul li,
+.tender ul li {
+  line-height: 30px;
+  font-size: 16px;
+  color: #AAAAAA;
+}
+.borrow_people ul li span,
+.real_name ul li span,
+.material_info ul li span,
+.repayment ul li span,
+.tender ul li span {
+  padding-left: 10px;
+}
+.material_info table,
+.repayment table,
+.tender table {
+  font-size: 16px;
+}
+/*--------开始编写----------*/
+@charset "utf-8";
+.borrow_message {
+  margin: 30px auto;
+}
+.borrow_message .div_left,
+.borrow_message .div_center,
+.borrow_message .div_right {
+  float: left;
+  padding: 5px;
+}
+.borrow_message .div_left h3,
+.borrow_message .div_center h3,
+.borrow_message .div_right h3 {
+  padding: 6px 0 6px 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #fff;
+}
+.borrow_message .div_left h3 {
+  background-color: #40D47E;
+}
+.borrow_message .div_center h3 {
+  background-color: #EC7E20;
+}
+.borrow_message .div_right h3 {
+  background-color: #2CA2EE;
+}
+.borrow_message div:nth-of-type(1) li {
+  list-style: none;
+  background: url(../../img/sequare.png) no-repeat;
+  padding-left: 17px;
+}
+.borrow_message .div_left_content,
+.borrow_message .div_center_content,
+.borrow_message .div_right_content {
+  background-color: #F9F9F9;
+  padding: 20px;
+}
+.borrow_message .div_a a {
+  display: block;
+  height: 30px;
+  width: 80px;
+  margin: 0px auto;
+  background-color: #00A8FF;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.borrow_message .div_a a:hover {
+  text-decoration: none;
+  background-color: #008FD9;
+}
+/*--------开始编写----------*/
+/*公共样式*/
+.font16 {
+  font-size: 16px;
+}
+.font18 {
+  font-size: 18px;
+}
+.font20 {
+  font-size: 20px;
+}
+.font24 {
+  font-size: 24px;
+}
+.font26 {
+  font-size: 26px;
+}
+/*页头导航栏*/
+.header_bottom {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.header_bottom .phone {
+  color: white;
+}
+.header_bottom .phone:hover {
+  color: dodgerblue;
+}
+.header_bottom #bs-example-navbar-collapse-1 ul li {
+  font-size: 14px;
+}
+.header_bottom #bs-example-navbar-collapse-1 ul li a {
+  color: white;
+}
+.header_bottom #bs-example-navbar-collapse-1 ul li a:hover {
+  text-decoration: underline;
+  color: dodgerblue;
+}
+.header_bottom #bs-example-navbar-collapse-1 ul li:last-child {
+  position: relative;
+}
+.header_bottom #bs-example-navbar-collapse-1 ul li:last-child img {
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.header_bottom #bs-example-navbar-collapse-1 ul li:last-child:hover img {
+  display: block;
+  top: 50px;
+  left: 0px;
+  border: 3px solid black;
+  border-top: 0px solid black;
+  background-color: white;
+}
+/*--------开始编写----------*/
+.footer_boder {
+  border-radius: 0px 0px 4px 4px;
+}
+.footer_boder div {
+  margin-top: 40px;
+}
+.footer_boder div .ul_main {
+  width: 100%;
+  background-color: #F8F8F8;
+  font-size: 16px;
+}
+.footer_boder div .ul_main .col-lg-4 ul li p,
+.footer_boder div .ul_main .col-md-4 ul li p {
+  padding-left: 13px;
+}
+.footer_boder div .ul_main .col-lg-4 ul li a,
+.footer_boder div .ul_main .col-md-4 ul li a {
+  padding: 0px;
+  margin: 0px;
+}
+.footer_boder div .ul_main .col-lg-4 ul li:first-child img,
+.footer_boder div .ul_main .col-md-4 ul li:first-child img {
+  width: 150px;
+}
+.footer_boder div .ul_main .col-lg-4 ul li:last-child,
+.footer_boder div .ul_main .col-md-4 ul li:last-child {
+  position: relative;
+}
+.footer_boder div .ul_main .col-lg-4 ul li:last-child img,
+.footer_boder div .ul_main .col-md-4 ul li:last-child img {
+  position: absolute;
+  top: 2px;
+  width: 120px;
+}
+/*
+.footer_right{
+    img{
+        width: 100px;
+    }
+}
+
+.footer_mid{
+    img{
+        width: 130px;
+    }
+}
+*/
+/*--------开始编写----------*/
+/*主要导航栏*/
+.nav_bottom {
+  margin-bottom: 0px;
+  border-radius: 0px 0px 4px 4px;
+}
+.nav_bottom .img_a {
+  width: 105px;
+  height: 40px;
+  margin-top: 7.3px;
+  margin-right: 20px;
+}
+.nav_bottom ul {
+  background-color: #F8F8F8;
+}
+.nav_bottom ul li {
+  font-size: 16px;
+  text-align: center;
+}
+.nav_bottom ul li a {
+  line-height: 30px;
+}
+.nav_bottom ul li:hover {
+  background-color: #F0F0F0;
+}
+.nav_bottom ul li:hover a {
+  color: #52BCE9;
+}
+.nav_bottom ul li:nth-of-type(6),
+.nav_bottom ul li:nth-of-type(7),
+.nav_bottom ul li:nth-of-type(8) {
+  display: none;
+}
+/*三分布部分*/
+.dl_three dl {
+  padding-left: 80px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+.dl_three dl dt {
+  font-size: 18px;
+}
+.dl_three dl:nth-of-type(1) {
+  background: url(../../img/feature01.png) no-repeat;
+}
+.dl_three dl:nth-of-type(2) {
+  background: url(../../img/feature02.png) no-repeat;
+}
+.dl_three dl:nth-of-type(3) {
+  background: url(../../img/feature03.png) no-repeat;
+}
+/*借款中部分与信息资讯的公共部分,个人中心里的账户详情*/
+.borrow_money .title,
+.borrow_information .title {
+  border-bottom: 1px solid #ccc;
+  height: 34px;
+}
+.borrow_money .title span:first-child,
+.borrow_information .title span:first-child {
+  font-size: 22px;
+  color: #5BC0DE;
+  border-bottom: 4px solid #52BCE9;
+}
+.borrow_money .message_tb,
+.borrow_information .message_tb {
+  padding: 0px;
+}
+.borrow_money .message_tb table tr th,
+.borrow_information .message_tb table tr th {
+  border-top: 0px;
+  font-size: 18px;
+  color: #c1c1c1;
+}
+.borrow_money .message_tb table tr:nth-of-type(2):hover,
+.borrow_information .message_tb table tr:nth-of-type(2):hover,
+.borrow_money .message_tb table tr:nth-of-type(3):hover,
+.borrow_information .message_tb table tr:nth-of-type(3):hover {
+  background-color: #F5F5F5;
+}
+.borrow_money .message_tb table tr:nth-of-type(2) td,
+.borrow_information .message_tb table tr:nth-of-type(2) td,
+.borrow_money .message_tb table tr:nth-of-type(3) td,
+.borrow_information .message_tb table tr:nth-of-type(3) td {
+  line-height: 30px;
+}
+.borrow_information .title {
+  padding: 0px;
+}
+.borrow_information .title span a {
+  font-size: 16px;
+}
+.borrow_information .message_ul ul {
+  list-style: none;
+}
+/*--------开始编写----------*/
+.account_right_lit {
+  padding: 0px;
+}
+.account_right_lit .message_tb {
+  padding: 0;
+  padding-bottom: 38px;
+}
+.account_right_lit .message_tb table .span_font_weight span {
+  font-weight: bold;
+}
+.personal_ltnav .list-group-item {
+  padding: 0;
+}
+.personal_ltnav .list-group-item a {
+  background: #F5F5F5;
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+.personal_ltnav .list-group-item .active {
+  background: #337AB7;
+  color: white;
+}
+.personal_ltnav .list-group-item ul {
+  border-top: solid 1px #ddd;
+}
+.personal_ltnav .list-group-item ul li a {
+  background: white;
+  display: block;
+  padding-left: 40px;
+}
+.personal_ltnav .list-group-item ul li .active {
+  background: #337AB7;
+  color: white;
+}
+/*--------个人账户账户信息右侧----------*/
+.font_b1 {
+  font-weight: bold;
+}
+.account_right_personal .basic_info {
+  border: solid 1px #ccc;
+  border-top: 0;
+  padding: 20px;
+}
+.account_right_personal .title {
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.account_right_personal .title .div_img {
+  border: 1px solid #aaa;
+  padding: 5px;
+  width: 110px;
+}
+.account_right_personal .title .div_img img {
+  width: 100px;
+}
+.account_right_personal .title div:nth-of-type(2) p:nth-of-type(1) {
+  padding-top: 10px;
+}
+.account_right_personal .message_tb .div_top p {
+  font-size: 16px;
+}
+.account_right_personal .message_tb .div_top p span {
+  color: #337AB7;
+  font-weight: bold;
+}
+.account_right_personal .message_tb .div_center {
+  padding-top: 20px;
+  text-align: center;
+}
+.account_right_personal .message_tb .div_bottom {
+  padding-top: 30px;
+}
+.account_right_personal .message_tb .div_bottom img {
+  float: left;
+}
+.account_right_personal .message_tb .div_bottom div {
+  padding: 10px,10px,0px,10px;
+  float: left;
+}
+.account_right_personal .message_tb .div_bottom div p {
+  margin: 15px 0px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+.account_right_personal .message_tb .div_bottom div:nth-of-type(2) {
+  margin: 0px;
+}
+@media screen and (max-width: 768px) {
+  .offcanvas {
+    position: relative;
+    transition: left 2s;
+  }
+  .offcanvas_left {
+    left: 0;
+  }
+  .offcanvas_asidebar {
+    position: absolute;
+    width: 50%;
+    left: -50%;
+  }
+  .offcanvas_btn {
+    position: absolute;
+    padding: 30px 8px;
+    top: 30%;
+    left: 0px;
+    z-index: 2;
+  }
+  .offcanvas.active {
+    left: 50%;
+  }
+}
+/*--------开始编写----------*/
+.bg_blue {
+  background-color: #337AB7;
+}
+.bg_blue a {
+  color: white;
+}
+.font_B {
+  font-weight: bold;
+}
+.font_right {
+  text-align: right;
+}
+.account {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.account .account_left {
+  font-size: 16px;
+}
+.account .account_left .left_1 a,
+.account .account_left .left_3 a,
+.account .account_left .left_5 a,
+.account .account_left .left_7 a {
+  display: block;
+  line-height: 40px;
+  background-color: #F5F5F5;
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  padding-left: 10px;
+}
+.account .account_left .left_1 a:hover,
+.account .account_left .left_3 a:hover,
+.account .account_left .left_5 a:hover,
+.account .account_left .left_7 a:hover {
+  text-decoration: none;
+}
+.account .account_left .left_1 a {
+  border-radius: 10px 10px 0px 0px;
+}
+.account .account_left .left_1 a:nth-of-type(2) {
+  border-radius: 0px;
+}
+.account .account_left .left_2 ul,
+.account .account_left .left_4 ul,
+.account .account_left .left_6 ul {
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  font-size: 15px;
+}
+.account .account_left .left_2 ul li,
+.account .account_left .left_4 ul li,
+.account .account_left .left_6 ul li {
+  list-style: none;
+  padding-left: 40px;
+  line-height: 40px;
+}
+.account .account_left .left_2 ul li:last-child,
+.account .account_left .left_4 ul li:last-child,
+.account .account_left .left_6 ul li:last-child {
+  padding-bottom: 10px;
+}
+.account .account_left .left_7 {
+  border-bottom: 1px solid #ccc;
+}
+.account .account_right {
+  padding: 0px;
+}
+.account .account_right .title {
+  border-radius: 5px 5px 0px 0px;
+  background-color: #F5F5F5;
+}
+.account .account_right .title span {
+  display: block;
+  padding-left: 5px;
+  line-height: 30px;
+}
+.account .account_right .message_tb {
+  padding: 0px;
+}
+.account .account_right .message_tb table tr:nth-of-type(2) {
+  background-color: #F5F5F5;
+}
+.account .account_right .div_top_text {
+  padding: 15px 0px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  background-color: #F4F8FA;
+}
+.account .account_right .div_top_text p {
+  font-size: 24px;
+  color: #0099DD;
+  margin-bottom: 0px;
+  padding: 15px 0px;
+}
+.account .account_right .div_top_text span {
+  color: #31708F;
+}
+.account .account_right .div_top_text span strong {
+  color: #A94442;
+}
+.account .account_right .div_buttom_text .title {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  background-color: #fff;
+  padding: 7px 0px;
+  line-height: 40px;
+}
+.account .account_right .div_buttom_text .title p {
+  padding-left: 15px;
+  font-size: 24px;
+  float: left;
+  width: 130px;
+}
+.account .account_right .div_buttom_text .title p:nth-of-type(2) {
+  padding: 0px;
+  text-align: center;
+  width: 70px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #337AB7;
+  position: relative;
+  top: 10px;
+  border-radius: 4px;
+  line-height: 30px;
+}
+.account .account_right .div_buttom_text .div_form {
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+}
+.account .account_right .div_buttom_text .div_form .form-group {
+  margin: 0px auto;
+}
+.account .account_right .div_buttom_text .div_form .form-group .input-group {
+  margin-bottom: 20px;
+}
+.borrow_apply_rht .borrow_info_honor {
+  padding: 0;
+}
+.borrow_apply_rht .borrow_info_honor .panel-heading {
+  border-bottom: 1px solid #ccc;
+}
+.borrow_apply_rht .correlative_charges {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  height: 170px;
+  border: solid 1px #ccc;
+  padding: 20px 26px;
+}
+.real_indentity_form {
+  padding-top: 24px;
+}
+.real_indentity_form label {
+  padding-right: 6px;
+}
+.real_indentity_form label + div {
+  padding-left: 6px;
+}
+.real_indentity_form .front_photo,
+.real_indentity_form .back_photo {
+  width: 160px;
+  height: 150px;
+  border: 1px solid #F0F0F0;
+  text-align: center;
+  padding: 12px 10px;
+  margin: 6px 10px;
+}
+.real_indentity_form .front_photo .front_photo_sm,
+.real_indentity_form .back_photo .front_photo_sm {
+  width: 110px;
+  height: 80px;
+  border: solid 1px #ccc;
+  margin: 5px auto;
+}
+.real_indentity_form .photo_tpl {
+  padding-top: 150px;
+}
+.el_navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.el_navbar .navbar-header a {
+  color: white;
+}
+.el_navbar .navbar-header a i {
+  font-size: 24px;
+}
+.el_navbar .navbar-right li {
+  position: relative;
+}
+.el_navbar .navbar-right li a {
+  color: white;
+}
+.el_navbar .navbar-right li a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+.el_navbar .navbar-right li figure {
+  position: absolute;
+  display: none;
+  top: 60px;
+  right: 0px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.el_navbar .navbar-right li figure img {
+  width: 100px;
+  height: 100px;
+}
+.el_nav {
+  background-color: #F8F8F8;
+  margin-bottom: 10px;
+}
+.el_nav .navbar-header .nav_logo img {
+  width: 109px;
+}
+.el_nav .navbar-nav li {
+  min-width: 90px;
+  text-align: center;
+}
+.el_nav .navbar-nav li a {
+  color: #666;
+  font-size: 16px;
+  line-height: 40px;
+}
+.el_nav .navbar-nav li:hover {
+  background: #f0f0f0;
+}
+.el_nav .navbar-nav li:hover a {
+  color: #3498db;
+}
+.el_main .el_feature .feature_con {
+  padding-left: 72px;
+  height: 80px;
+  margin-top: 20px;
+}
+.el_main .el_feature .feature_con dt {
+  font-size: 18px;
+}
+.el_main .el_feature .feature_ico1 {
+  background: url(../../img/feature01.png) no-repeat;
+}
+.el_main .el_feature .feature_ico2 {
+  background: url(../../img/feature02.png) no-repeat;
+}
+.el_main .el_feature .feature_ico3 {
+  background: url(../../img/feature03.png) no-repeat;
+}
+.el_main .el_borrow .panel-heading,
+.el_main .el_news .panel-heading {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.el_main .el_borrow .panel-heading .pull-left,
+.el_main .el_news .panel-heading .pull-left {
+  border-bottom: 4px solid #3498db;
+  padding-bottom: 5px;
+  font-size: 24px;
+  color: #3498db;
+}
+.el_main .el_borrow .panel-heading .pull-right,
+.el_main .el_news .panel-heading .pull-right {
+  padding-top: 14px;
+}
+.el_main .el_borrow .panel-body table tr th,
+.el_main .el_news .panel-body table tr th {
+  border-top: 0px!important ;
+}
+.el_main .el_news .panel-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+.el_main .el_news .panel-body ul li {
+  line-height: 30px;
+}
+.el_main .el_news .panel-body ul li a {
+  color: #666;
+}
+.el_footer {
+  background: #F0F0F0;
+  padding: 30px 0;
+  margin: 0px;
+}
+.el_footer .footer_left {
+  line-height: 30px;
+  font-size: 14px;
+}
+.el_footer .footer_mid p,
+.el_footer .footer_right p {
+  text-align: center;
+}
+.el_footer .row {
+  text-align: center;
+}
+.el_footer .row img {
+  width: 70%;
+}

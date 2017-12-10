@@ -1,0 +1,45 @@
+//账户充值
+
+.recharge_content{
+    .recharge_content_top{
+        background-color: #F4F8FA;
+        border-left: 2px solid darkblue;
+        padding: 30px 20px;
+        h3{
+            color: #3498DB;
+        }
+    }
+    .recharge_content_main{
+        margin: 20px 0;
+        .tab-content{
+            border: 1px solid #ccc;
+            border-top: 0;
+            padding: 10px 20px;
+            table{
+                .el_bank{
+                    display: block;
+                    width: 118px;
+                    height: 28px;
+                    background: url(../../img/bank_list.png) no-repeat;
+                }
+                .el_bank2{
+                    background-position: 0px -35px;
+                }
+                .el_bank3{
+                    background-position: 0px -108px;
+                }
+                tr{
+                    td{
+                        vertical-align: middle;
+                    }
+                }
+            }
+            p{
+                color: #337AB7;
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

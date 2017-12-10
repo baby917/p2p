@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>p2p借贷平台</title>
+	    <!-- Bootstrap -->
+	    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/javascript">
+	
+	    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <!--fontawesome-->
+    	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+		<!--自定义样式-->
+		<link rel="stylesheet" type="text/css" href="styles/css/core.css"/>
+		
+	</head>
+	<body>
+	<!-- 头部导航栏 -->
+    <header class="el_navbar navbar navbar-inverse">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>			
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			      
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="index.html">首页</a></li>
+	        <li><a href="personal.html"style="color: #0FA7FF;font-weight: bold;">花花</a></li>
+	        <li><a href="recharge.html">账户充值</a></li>
+	        <li><a href="#">注销</a></li>
+	        <li><a href="#">帮助</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+   </header>		
+	<!-- 内容导航栏部分 -->
+	<script src="js/tpl_nav_personal.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 个人中心 -->
+	<section class="container account">
+		<!-- 左边层-->
+		 			<div class="col-sm-3 personal_ltnav offcanvas_asidebar">
+				<ul class="list-group">
+					<!--第一个-->
+				  <li class="list-group-item">
+				  	<a href="#">投资项目</a>
+				  </li>
+				  <!--第二个-->
+				  <li class="list-group-item">
+				  	<a href="#">借款项目</a>
+				  	<ul class="list-unstyled">
+				  		<li><a href="account_lit.html">借款项目</a></li>
+				  		<li><a href="repayment_details.html">还款明细</a></li>
+				  	</ul>
+				  </li>
+				  <!--第三个-->
+				  <li class="list-group-item">
+				  	<a href="#">我的账户</a>
+				  	<ul class="list-unstyled">
+				  		<li><a href="personal.html">账户信息</a></li>
+				  		<li><a href="real_identity.html">实名认证</a></li>
+				  		<li><a href="#">银行卡管理</a></li>
+				  		<li><a href="login_list.html">登录记录</a></li>
+				  	</ul>
+				  </li>
+				  <!--第四个-->
+				  <li class="list-group-item">
+				  	<a href="#">资产详情</a>
+				  	<ul class="list-unstyled">
+				  		<li><a href="account-stream.html">账户流水</a></li>
+				  		<li><a href="recharge_list.html">充值明细</a></li>
+				  		<li><a href="account-withdraw.html">提现记录</a></li>
+				  		<li><a href="user_information.html">收款明细</a></li>
+				  	</ul>
+				  </li>
+				  <!--第五个-->
+				  <li class="list-group-item">
+				  	<a href="#" class="active">个人资料</a>
+				  </li>
+				</ul>
+			</div>
+		<!--右部分-->
+		<div class="borrow_apply_rht col-sm-9">
+			<!--信用贷款文字上-->
+			<div class="credit_loan col-sm-12" style="background-color: #F4F8FA;border-left: 2px solid darkblue;">
+			  <div class="panel-heading h3 text-primary">信用借款</div>
+			  <div class="panel-body">
+			    	<span class="text-primary" >授信额度：</span>
+			    	<span class="text-danger">2000</span>     
+			    	<span class="text-primary" >可借金额：</span>
+			    	<span class="text-danger">2000</span>
+		  	 </div>
+			</div>
+			<!--借款信息信用标-->
+			<div class="borrow_info_honor col-sm-12">
+				<div class="panel">
+				  <div class="panel-heading h3">借款信息&emsp;<span class="btn btn-primary">信用标</span></div>
+				  <div class="panel-body row">
+				  	<!--form表单-->
+				    <form class="form-horizontal col-sm-offset-1 col-sm-6">
+				    	<!--第一个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">借款金额</label>
+					    <div class="input-group col-sm-6">
+					      <input type="text" class="form-control" id="exampleInputAmount">
+					      <div class="input-group-addon">元</div>
+						</div>
+					  </div>
+					  <!--第二个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">借款利息</label>
+					    <div class="input-group col-sm-6">
+					      <input type="text" class="form-control" id="exampleInputAmount">
+					      <div class="input-group-addon">%</div>
+						</div>
+					  </div>
+					  <!--第三个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">借款期限</label>
+					    <div class="input-group col-sm-6">
+					      <select class="form-control">
+							  <option>1</option>
+							  <option>3</option>
+							  <option>6</option>
+							  <option>9</option>
+							  <option>12</option>
+							  <option>24</option>
+						 </select>
+					      <div class="input-group-addon">月</div>
+						</div>
+					  </div>
+					  <!--第四个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">借款利息</label>
+					    <div class="input-group col-sm-6">
+					      <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked">按月分期 
+</label>
+					      <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">按月到期
+</label>
+						</div>
+					  </div>
+					  <!--第五个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">最小投标</label>
+					    <div class="input-group col-sm-6">
+					      <input type="text" class="form-control" id="exampleInputAmount">
+					      <div class="input-group-addon">元</div>
+						</div>
+					  </div>
+					  <!--第六个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">投标奖金</label>
+					    <div class="input-group col-sm-6">
+					      <input type="text" class="form-control" id="exampleInputAmount">
+					      <div class="input-group-addon">%</div>
+						</div>
+					  </div>
+					  <!--第七个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">招标天数</label>
+					    <div class="input-group col-sm-6">
+					      <select class="form-control">
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							  <option>6</option>
+							  <option>7</option>
+							  <option>8</option>
+							  <option>9</option>
+							  <option>10</option>
+							  <option>11</option>
+							  <option>12</option>
+						 </select>
+					      <div class="input-group-addon">月</div>
+						</div>
+					  </div>
+					  <!--第八个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">借款标题</label>
+					    <div class="input-group col-sm-9">
+					      <input type="text" class="form-control" id="exampleInputAmount">
+						</div>
+					  </div>
+					  <!--第九个-->
+					  <div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 control-label">借款描述</label>
+					    <div class="input-group col-sm-9">
+					      <textarea class="form-control" rows="3" style="resize: none;"></textarea>
+						</div>
+					  </div>
+					  <!--按钮-->
+					  <div class="form-group">
+					    <button class="btn btn-primary col-sm-offset-3">提交申请</button>
+					  </div>
+					</form>
+					<!--相关费用-->
+					<div class="col-sm-4 correlative_charges">
+						<p class="h4">相关费用</p>
+						<p><a href="#" class="text-primary">利息 --</a></p>
+						<p><a href="#" class="text-primary">奖金 --</a></p>
+						<p><a href="#" class="text-primary">管理费 --</a></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<!--页脚-->
+	<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jquery/dist/jquery.min.js"></script>
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

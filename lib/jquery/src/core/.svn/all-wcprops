@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core
+END
+ready.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/ready.js
+END
+nodeName.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/nodeName.js
+END
+DOMEval.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/DOMEval.js
+END
+stripAndCollapse.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/stripAndCollapse.js
+END
+ready-no-deferred.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/ready-no-deferred.js
+END
+support.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/support.js
+END
+parseHTML.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/parseHTML.js
+END
+access.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/access.js
+END
+init.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/init.js
+END
+readyException.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/p2p/!svn/ver/237/Team5/trunk/Code/lib/jquery/src/core/readyException.js
+END

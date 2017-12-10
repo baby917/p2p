@@ -1,0 +1,59 @@
+/*--------开始编写----------*/
+@charset "utf-8";
+
+.footer_boder{
+//  height: 230px;
+    //margin-top: 500px;
+    border-radius: 0px 0px 4px 4px;
+//  margin-top: 500px;
+    div{
+        margin-top: 40px;
+        .ul_main{
+            width: 100%;
+            background-color: #F8F8F8;
+            font-size: 16px;
+            .col-lg-4,.col-md-4{
+                ul{
+                    li{
+                        //padding: 0px;
+                        p{
+                            padding-left: 13px;
+                        }
+                        a{
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                    }
+                    li:first-child{
+                        img{
+                            width: 150px;
+                        }
+                    }
+                    li:last-child{
+                        position: relative;
+                        img{
+                            position: absolute;
+                            top: 2px;
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+.footer_right{
+    img{
+        width: 100px;
+    }
+}
+
+.footer_mid{
+    img{
+        width: 130px;
+    }
+}
+*/
+

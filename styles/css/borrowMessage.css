@@ -1,0 +1,56 @@
+/*--------开始编写----------*/
+@charset "utf-8";
+.borrow_message {
+  margin: 30px auto;
+}
+.borrow_message .div_left,
+.borrow_message .div_center,
+.borrow_message .div_right {
+  float: left;
+  padding: 5px;
+}
+.borrow_message .div_left h3,
+.borrow_message .div_center h3,
+.borrow_message .div_right h3 {
+  padding: 6px 0 6px 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #fff;
+}
+.borrow_message .div_left h3 {
+  background-color: #40D47E;
+}
+.borrow_message .div_center h3 {
+  background-color: #EC7E20;
+}
+.borrow_message .div_right h3 {
+  background-color: #2CA2EE;
+}
+.borrow_message div:nth-of-type(1) li {
+  list-style: none;
+  background: url(../../img/sequare.png) no-repeat;
+  padding-left: 17px;
+}
+.borrow_message .div_left_content,
+.borrow_message .div_center_content,
+.borrow_message .div_right_content {
+  background-color: #F9F9F9;
+  padding: 20px;
+}
+.borrow_message .div_a a {
+  display: block;
+  height: 30px;
+  width: 80px;
+  margin: 0px auto;
+  background-color: #00A8FF;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.borrow_message .div_a a:hover {
+  text-decoration: none;
+  background-color: #008FD9;
+}
